@@ -1,0 +1,8 @@
+{
+  "name": "PokeBank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Brunnosama/PokeBank.git",
+  "author": "Brunnosama <apbrunno@gmail.com>",
+  "license": "MIT"
+}
