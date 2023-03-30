@@ -4,15 +4,21 @@
   "main": "index.js",
   "scripts": {
     "migrate": "node-pg-migrate",
-    "start":"node ./src/index.js" 
+    "migrate:up": "node-pg-migrate up",
+    "migrate:down": "node-pg-migrate down",
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "repository": "https://github.com/Brunnosama/PokeBank.git",
   "author": "Brunnosama <apbrunno@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
     "node-pg-migrate": "^6.2.2",
-    "pg": "^8.8.0"
+    "nodemon": "^2.0.22"
   }
 }

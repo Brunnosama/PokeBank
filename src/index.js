@@ -1,12 +1,10 @@
-const express = require('express')
-
-const PORT = 3000;
-
+const express = require("express");
 const app = express();
+const routes = require("./routes");
+const PORT = process.env.PORT || 3001;
 
-app.get("/ping", (req, res) =>
-    res.json({ message: 'success 2' })
-        .status(200)
-)
+app.use(express.json());
 
-app.listen(PORT, () => console.log(`server is listen on port ${PORT}`));
+routes(app);
+
+app.listen(PORT, () => console.log(`The server is running on the ${PORT} port`));
